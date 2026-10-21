@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="University of Layyah student blog, campus news, events and academic updates.">
+  <title>University of Layyah | Campus Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="logo" href="#home" aria-label="University of Layyah home">
+        <span class="logo-mark">UL</span>
+        <span class="logo-copy"><strong>UNIVERSITY OF LAYYAH</strong><small>Campus Blog & Updates</small></span>
+      </a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="navigation" id="navigation" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#news">Campus News</a>
+      <a href="#events">Events</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">LEARN • CONNECT • GROW</p>
+        <h1>Life, learning & stories<br><span>from our campus.</span></h1>
+        <p class="hero-text">A student-friendly space for university news, campus events, achievements and ideas from the University of Layyah community.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#news">Explore Latest Posts</a>
+          <a class="button secondary" href="#about">Discover Our Blog</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative university illustration">
+        <div class="sun"></div>
+        <div class="book book-one"></div><div class="book book-two"></div>
+        <div class="campus-building">
+          <div class="roof"></div><div class="building-top"></div>
+          <div class="columns"><i></i><i></i><i></i><i></i></div>
+          <div class="building-base"></div>
+        </div>
+        <div class="art-label">YOUR CAMPUS. YOUR STORIES.</div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Blog highlights">
+      <div><strong>Campus</strong><span>Stories & updates</span></div>
+      <div><strong>Community</strong><span>Student voices</span></div>
+      <div><strong>Inspiration</strong><span>Ideas for tomorrow</span></div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="section-heading">
+        <div><p class="eyebrow">FROM THE UNIVERSITY</p><h2>Latest campus stories</h2></div>
+        <p>Updates, ideas and highlights from university life.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter blog posts">
+        <button class="filter-btn selected" data-filter="all">All Posts</button>
+        <button class="filter-btn" data-filter="news">News</button>
+        <button class="filter-btn" data-filter="students">Student Life</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+      </div>
+      <div class="post-grid" id="postGrid">
+        <article class="post-card" data-category="news">
+          <div class="post-visual visual-blue"><span class="visual-icon">✦</span><span class="visual-caption">CAMPUS UPDATE</span></div>
+          <div class="post-body"><span class="tag">UNIVERSITY NEWS</span><h3>Keeping up with campus announcements</h3><p>Stay connected with important notices, academic reminders and updates shared with the university community.</p><a href="#contact" class="read-more">Read more <span>→</span></a></div>
+        </article>
+        <article class="post-card" data-category="students">
+          <div class="post-visual visual-gold"><span class="visual-icon">✎</span><span class="visual-caption">STUDENT VOICES</span></div>
+          <div class="post-body"><span class="tag">STUDENT LIFE</span><h3>Making the most of university life</h3><p>From study routines to friendships, explore simple ways to make your campus experience more rewarding.</p><a href="#contact" class="read-more">Read more <span>→</span></a></div>
+        </article>
+        <article class="post-card" data-category="events">
+          <div class="post-visual visual-green"><span class="visual-icon">✧</span><span class="visual-caption">CAMPUS ACTIVITIES</span></div>
+          <div class="post-body"><span class="tag">EVENTS & ACTIVITIES</span><h3>Celebrating ideas, skills and creativity</h3><p>Discover how campus activities can help students share their talents, meet new people and learn together.</p><a href="#events" class="read-more">Read more <span>→</span></a></div>
+        </article>
+      </div>
+      <p class="empty-message" id="emptyMessage" hidden>No posts in this category yet.</p>
+    </section>
+
+    <section class="event-section" id="events">
+      <div class="event-copy"><p class="eyebrow">WHAT'S HAPPENING</p><h2>Make campus life count.</h2><p>Check university notices and official channels for confirmed dates, registrations and event details. This demo section can be updated with real campus events.</p><a class="button light" href="#contact">Share an Update</a></div>
+      <div class="event-list">
+        <div class="event-item"><span class="event-number">01</span><div><strong>Academic Updates</strong><p>Schedules, notices and useful reminders</p></div><span class="event-arrow">↗</span></div>
+        <div class="event-item"><span class="event-number">02</span><div><strong>Student Activities</strong><p>Clubs, creativity and campus community</p></div><span class="event-arrow">↗</span></div>
+        <div class="event-item"><span class="event-number">03</span><div><strong>Achievements</strong><p>Celebrating student and faculty success</p></div><span class="event-arrow">↗</span></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-mark">UL<span>✦</span></div>
+      <div><p class="eyebrow">ABOUT THIS PROJECT</p><h2>A blog built around campus community.</h2><p>This student project is a front-end demo for a University of Layyah blog. It brings campus news, student life and events into one clean, responsive layout. Replace sample content with verified university information before publishing.</p></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><p class="eyebrow">GET INVOLVED</p><h2>Have a campus story to share?</h2><p>Use this demo form to practise JavaScript form handling. It does not send messages to a server.</p></div>
+      <form id="contactForm" class="contact-form">
+        <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required>
+        <label for="message">Your idea or message</label><textarea id="message" name="message" rows="3" placeholder="Tell us what you would like to share..." required></textarea>
+        <button class="button primary" type="submit">Submit Message</button>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo footer-logo" href="#home"><span class="logo-mark">UL</span><span class="logo-copy"><strong>UNIVERSITY OF LAYYAH</strong><small>Campus Blog & Updates</small></span></a>
+    <p>Student web development project • Sample content for demonstration</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
